@@ -1,0 +1,35 @@
+function Home () {
+    return(
+        <div>
+            <h2>Home</h2>
+        </div>
+    );
+}
+export default Home;
+
+
+
+
+function Products() {
+    return (
+        <div>
+            <h2>Products</h2>
+        </div>
+    );
+}
+export default Products;
+
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Home from "./Home/Home";
+import Products from "./Products/Products";
+
+return (
+    <Router>
+        <div className= "grid-container">
+            <link rel = "stylesheet" href= "style.css" />
+            <title>Emerald Tiger</title>
+
+            <body>
+                <div>
+                    <header className = "header">
+)
