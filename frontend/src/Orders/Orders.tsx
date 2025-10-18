@@ -33,7 +33,7 @@ function Orders() {
                                 <td>{order.isPaid}</td>
                                 <td>{order.paidAt}</td>
                                 <td>{order.isDelivered.toString()}</td>
-                                <td>{order.deliverableData}</td>
+                                <td>{order.deliveredDate}</td>
                                 <td>
                                     <Link to={"/order/" + order._id} className="button secondary">
                                         Details
@@ -45,6 +45,7 @@ function Orders() {
                 </table>
         </div>
     </div>
-};
+    );
+}
 
 export default Orders;
