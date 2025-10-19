@@ -6,6 +6,7 @@ import Products from "./Products/Products";
 
 import React from "react";
 import "./index.css";
+import Payment from './Payment/Payment';
 
 function App() {
   function openMenu() {
@@ -26,6 +27,8 @@ function App() {
         <div className="header-links">
           <Link to ="/">Home</Link>
           <Link to ="/catalog">Catalog</Link>
+          <Link to="/orders">Orders</Link>
+          <Link to="/payment">Payment</Link>
         </div>
       </header>
 
@@ -40,8 +43,9 @@ function App() {
 
       <main className="main">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalog" element={<Products />} />
+          <Route path= "/" element={<Home />} />
+          <Route path= "/catalog" element={<Products />} />
+          <Route path= "/payment" element={<Payment />} />
         </Routes>
       </main>
 
