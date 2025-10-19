@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home/Home";
 import Products from "./Products/Products";
 import Orders from "./Orders/Orders";
-
+import OrderDetail from "./Orders/OrderDetail";
 
 import React from "react";
 import "./index.css";
@@ -28,7 +28,7 @@ function App() {
           <Link to ="/">Home</Link>
           <Link to ="/catalog">Catalog</Link>
           <Link to="/orders">Orders</Link>
-          <Route path="/order/:id" element={<OrderDetail />}></Route>
+          
           <Link to="/payment">Payment</Link>
         </div>
       </header>
@@ -46,8 +46,9 @@ function App() {
         <Routes>
           <Route path= "/" element={<Home />} />
           <Route path= "/catalog" element={<Products />} />
-          <Route path="/orders" element={<Orders />} />
+          <Route path="/orders" element={<Orders />}></Route>
           <Route path= "/payment" element={<Payment />} />
+          <Route path="/orders/:id" element={<OrderDetail />}></Route>
         </Routes>
       </main>
 
